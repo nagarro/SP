@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance 
+    Title="Business Rule Types" 
+    OnQuickLaunch="TRUE" 
+    TemplateType="10001" 
+    Url="Lists/BusinessRuleTypes" 
+    Description="Business Rule Types List Instance"
+    FeatureId="621ee048-12ce-4f41-b996-5cf9309b785f"
+    ></ListInstance>
+</Elements>

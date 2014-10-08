@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ExpenseDetails" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ExpenseDetails" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01004b3dcd7cc2a94a4e9e71209ff291bf15" Name="ListFieldsContentType"><FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+      <FieldRef ID="{012c0cef-6086-4cba-b8dc-7d08d6cb9c85}" Name="ExpenseDescription" />
+      <FieldRef ID="{82499cb7-ef47-4260-a44c-e21dd1e74681}" Name="ExpenseID" />
+        <FieldRef ID="{d3e8dfe9-b09b-4852-92c6-8b981117ca1f}" Name="Amount" />
+      <FieldRef ID="{9fc0c371-ed64-4a28-b7bf-268693389b62}" Name="ClientName" />
+    </FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="ExpenseDescription" ID="{012c0cef-6086-4cba-b8dc-7d08d6cb9c85}" DisplayName="Expense Description" Type="Note" Required="TRUE" />
+      <Field Name="ExpenseID" ID="{82499cb7-ef47-4260-a44c-e21dd1e74681}" DisplayName="Expense ID" Type="Number" Required="TRUE" />
+      <Field Name="Amount" ID="{d3e8dfe9-b09b-4852-92c6-8b981117ca1f}" DisplayName="Amount" Type="Number" Required="TRUE" />
+      <Field Name="ClientName" ID="{9fc0c371-ed64-4a28-b7bf-268693389b62}" DisplayName="Client Name" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>          
+        <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="ExpenseDescription" />
+          <FieldRef Name="ExpenseID" />
+          <FieldRef Name="Amount" />
+          <FieldRef Name="ClientName" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

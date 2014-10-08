@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Expense" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Expense" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100c3a69540018445baadff3a1f55d0f875" Name="ListFieldsContentType">
+      <FieldRefs>
+        <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+        <FieldRef ID="{60a00f07-8da3-42d5-b103-17515c5cc96f}" Name="EmployeeID" />
+        <FieldRef ID="{fba29c2a-574e-47e4-b77f-70e933424b26}" Name="Employeeloginname" />
+        <FieldRef ID="{43216a33-4812-42f8-bb9d-5be75454a01f}" Name="ExpenseDescription" />
+        <FieldRef ID="{29a26bb3-a139-4d4c-8c2b-174fc7edc132}" Name="TotalExpense" />
+        <FieldRef ID="{d40d432c-4e59-4dd1-9d51-7d7b1e734767}" Name="ApprovedAmount" />
+        <FieldRef ID="{70e2575f-fabf-4b08-afec-691e6804e83b}" Name="ApprovedBy" />
+        <FieldRef ID="{9e6cabcc-cd83-485f-a929-6d1dc1e1c60e}" Name="ExpenseType" />
+        <FieldRef ID="{4c52a21c-3a9c-4508-89cc-a3c583c57bcc}" Name="IsEmployeeActive" />
+        <FieldRef ID="{5013b195-88e1-44bb-9676-a9069d8267b0}" Name="ApproverComments" />
+      </FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+     <Field Name="EmployeeID" ID="{60a00f07-8da3-42d5-b103-17515c5cc96f}" DisplayName="Employee ID" Type="Number" Required="TRUE" />
+      <Field Name="Employeeloginname" ID="{fba29c2a-574e-47e4-b77f-70e933424b26}" DisplayName="Employee login name" Type="Text" Required="TRUE" />
+      <Field Name="ExpenseDescription" ID="{43216a33-4812-42f8-bb9d-5be75454a01f}" DisplayName="Expense Description" Type="Note" />
+      <Field Name="TotalExpense" ID="{29a26bb3-a139-4d4c-8c2b-174fc7edc132}" DisplayName="Total Expense" Type="Number" Required="TRUE" />
+      <Field Name="ApprovedAmount" ID="{d40d432c-4e59-4dd1-9d51-7d7b1e734767}" DisplayName="Approved Amount" Type="Number" Required="FALSE" />
+      <Field Name="ApprovedBy" ID="{70e2575f-fabf-4b08-afec-691e6804e83b}" DisplayName="Approved By" Type="User" />
+      <Field Name="ExpenseType" ID="{9e6cabcc-cd83-485f-a929-6d1dc1e1c60e}" DisplayName="Expense Type" Type="Lookup" List="Lists/ExpenseForms" ShowField="Title" />
+      <Field Name="IsEmployeeActive" ID="{4c52a21c-3a9c-4508-89cc-a3c583c57bcc}" DisplayName="Is Employee Active" Type="Boolean" />
+      <Field Name="ApproverComments" ID="{5013b195-88e1-44bb-9676-a9069d8267b0}" DisplayName="Approver Comments" Type="Note" />
+    </Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="EmployeeID" />
+          <FieldRef Name="Employeeloginname" />
+          <FieldRef Name="ExpenseDescription" />
+          <FieldRef Name="TotalExpense" />
+          <FieldRef Name="ApprovedAmount" />
+          <FieldRef Name="ApprovedBy" />
+          <FieldRef Name="ExpenseType" />
+          <FieldRef Name="IsEmployeeActive" />
+          <FieldRef Name="ApproverComments" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

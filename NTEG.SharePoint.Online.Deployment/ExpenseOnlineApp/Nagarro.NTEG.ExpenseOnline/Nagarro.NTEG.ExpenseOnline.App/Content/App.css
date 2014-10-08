@@ -1,0 +1,226 @@
+﻿/* Place custom styles below */
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url('fonts/regular/1403809-OpenSans-Regular.eot');
+    src: url('fonts/regular/1403809-OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/regular/1403809-OpenSans-Regular.svg#Open Sans') format('svg'), url('fonts/regular/1403809-OpenSans-Regular.woff') format('woff'), url('fonts/regular/1403809-OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url('fonts/bold/51116944-OpenSans-Bold.eot');
+    src: url('fonts/bold/51116944-OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/bold/51116944-OpenSans-Bold.svg#Open Sans') format('svg'), url('fonts/bold/51116944-OpenSans-Bold.woff') format('woff'), url('fonts/bold/51116944-OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url('fonts/light/308593751-OpenSans-Light.eot');
+    src: url('fonts/light/308593751-OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('fonts/light/308593751-OpenSans-Light.svg#Open Sans Light') format('svg'), url('fonts/light/308593751-OpenSans-Light.woff') format('woff'), url('fonts/light/308593751-OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Semibold";
+    src: url('fonts/semibold/466186524-OpenSans-Semibold.eot');
+    src: url('fonts/semibold/466186524-OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), url('fonts/semibold/466186524-OpenSans-Semibold.svg#Open Sans Semibold') format('svg'), url('fonts/semibold/466186524-OpenSans-Semibold.woff') format('woff'), url('fonts/semibold/466186524-OpenSans-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MoolBoran";
+    src: url('fonts/MoolBoran.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#s4-titlerow , #s4-ribbonrow, #suiteBarDelta {
+    display: none!important;
+}
+
+html, body, form {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    background: #f7f7f7;
+    width: 960px;
+    height: 70px;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 10px 0;
+}
+
+
+.details {
+    font-size: 44px;
+    margin: 15px 15px 0px 0px;
+    color: #999999;
+    font-family: "MoolBoran";
+    padding-left:40px;
+}
+
+.details_new {
+    font-size: 23px;
+    margin: -24px 19px 0px 0px;
+    color: #8c2033; /*color: #fff;*/
+    font-family: "MoolBoran";
+    padding-left:40px;
+}
+
+.form_container {
+    width: 930px;
+    margin: 10px 15px 20px 15px;
+    font-family: "Open Sans Regular";
+}
+
+
+.lable_name {
+    color: #303030;
+    clear: both;
+}
+
+.lable_name > span  {
+    font-size: 14px;
+    float: left;
+    margin: 15px 0px 10px 15px;
+    width: 170px;
+}
+
+#itemRows {
+    margin: 0px 0px 10px 150px;
+    float:left;
+    font-size:13px;
+}
+
+#itemRows p {
+    margin:0px 0px 10px 0px;
+}
+
+.txtbox {
+    width: 520px;
+    margin: 10px 15px 0px 25px;
+    height: 25px;
+}
+
+
+.txtbox1 {
+    width: 520px;
+    margin: 10px 15px 0px 25px;
+}
+
+.astrick {
+    float: none !important;
+    color: red;
+    margin: 0px 0px 0px 0px !important;
+}
+
+.dropdwn {
+    height: 30px;
+    margin: 10px 15px 0px 25px;
+    width: 532px;
+}
+
+
+#jquery-loader-background {
+    background-color: silver;
+}
+
+
+.form_bg {
+    background: #cbcbcb;
+    background: -moz-linear-gradient(top, #cbcbcb 0%, #d5d5d5 100%, #d9d9d9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cbcbcb), color-stop(100%,#d5d5d5), color-stop(100%,#d9d9d9));
+    background: -webkit-linear-gradient(top, #cbcbcb 0%,#d5d5d5 100%,#d9d9d9 100%);
+    background: -o-linear-gradient(top, #cbcbcb 0%,#d5d5d5 100%,#d9d9d9 100%);
+    background: -ms-linear-gradient(top, #cbcbcb 0%,#d5d5d5 100%,#d9d9d9 100%);
+    background: linear-gradient(to bottom, #cbcbcb 0%,#d5d5d5 100%,#d9d9d9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbcbcb', endColorstr='#d9d9d9',GradientType=0 );
+    width: 930px;
+    height: auto;
+    clear: both;
+    border-radius: 8px;
+    padding:9px 7px 7px 4px;
+}
+
+#btnSumbit {
+    background: #cbcbcb;
+    background: -moz-linear-gradient(top, #cbcbcb 0%, #d5d5d5 100%, #d9d9d9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cbcbcb), color-stop(100%,#d5d5d5), color-stop(100%,#d9d9d9));
+    background: -webkit-linear-gradient(top, #cbcbcb 0%,#d5d5d5 100%,#d9d9d9 100%);
+    background: -o-linear-gradient(top, #cbcbcb 0%,#d5d5d5 100%,#d9d9d9 100%);
+    background: -ms-linear-gradient(top, #cbcbcb 0%,#d5d5d5 100%,#d9d9d9 100%);
+    background: linear-gradient(to bottom, #cbcbcb 0%,#d5d5d5 100%,#d9d9d9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbcbcb', endColorstr='#d9d9d9',GradientType=0 );
+    border: medium none;
+    border-radius: 4px;
+    clear: both;
+    color: #303030;
+    float: right;
+    margin: 10px 0 10px 10px;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+#jquery-loader.blue-with-image {
+    border: none;
+    padding-top: 35px;
+    background-color: transparent;
+    text-align: center;
+    background-image: url(../images/ajax-loader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.btngray {
+background: #3498db;
+background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+background-image: -o-linear-gradient(top, #3498db, #2980b9);
+background-image: linear-gradient(to bottom, #3498db, #2980b9);
+-webkit-border-radius: 3;
+-moz-border-radius: 3;
+border-radius: 3px;
+font-weight: bold;
+color: #ffffff;
+font-size: 16px;
+padding: 8px 20px;
+text-decoration: none;
+margin:10px;
+}

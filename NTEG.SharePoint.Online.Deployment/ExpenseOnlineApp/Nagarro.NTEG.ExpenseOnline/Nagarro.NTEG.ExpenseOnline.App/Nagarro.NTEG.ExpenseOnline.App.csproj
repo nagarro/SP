@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E185E99-8980-4F80-AEB8-8D13E6477952}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nagarro.NTEG.ExpenseOnline.App</RootNamespace>
+    <AssemblyName>Nagarro.NTEG.ExpenseOnline.App</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{39b9ac65-62e2-4acc-bdbe-5bdf248cedc3}</AppFeaturePartId>
+    <WspPartId>{b69f9b39-284e-4201-8bdc-fe41fc6823e5}</WspPartId>
+    <WorkflowPartId>{78080b1a-31b9-4b4b-a89a-519288713e1a}</WorkflowPartId>
+    <CspkgPartId>{f425faf3-69d0-4123-81a5-e621fdaae7bc}</CspkgPartId>
+    <SqlPackagePartId>{a6ecd2bf-7745-4845-8093-791b62bcb1dc}</SqlPackagePartId>
+    <ActivePublishProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Content\fonts\bold\51116944-OpenSans-Bold.eot" />
+    <None Include="Content\fonts\bold\51116944-OpenSans-Bold.ttf" />
+    <None Include="Content\fonts\bold\51116944-OpenSans-Bold.woff" />
+    <None Include="Content\fonts\light\308593751-OpenSans-Light.eot" />
+    <None Include="Content\fonts\light\308593751-OpenSans-Light.ttf" />
+    <None Include="Content\fonts\light\308593751-OpenSans-Light.woff" />
+    <None Include="Content\fonts\MoolBoran.ttf" />
+    <None Include="Content\fonts\regular\1403809-OpenSans-Regular.eot" />
+    <None Include="Content\fonts\regular\1403809-OpenSans-Regular.ttf" />
+    <None Include="Content\fonts\regular\1403809-OpenSans-Regular.woff" />
+    <None Include="Content\fonts\semibold\466186524-OpenSans-Semibold.eot" />
+    <None Include="Content\fonts\semibold\466186524-OpenSans-Semibold.ttf" />
+    <None Include="Content\fonts\semibold\466186524-OpenSans-Semibold.woff" />
+    <None Include="Features\Nagarro.NTEG.ExpenseOnline.WorkFlow\Nagarro.NTEG.ExpenseOnline.WorkFlow.feature">
+      <FeatureId>{7df86121-d9ca-4163-ac34-a28e313c18e7}</FeatureId>
+    </None>
+    <None Include="Features\Nagarro.NTEG.ExpenseOnline.ListInstance\Nagarro.NTEG.ExpenseOnline.ListInstance.feature">
+      <FeatureId>{a0e63871-99cb-4a63-8aea-9fbf8edb621c}</FeatureId>
+    </None>
+    <None Include="Features\Nagarro.NTEG.ExpenseOnline.ListDefinition\Nagarro.NTEG.ExpenseOnline.ListDefinition.feature">
+      <FeatureId>{c57b87d1-41d6-461c-ba2e-6ba087e2f5da}</FeatureId>
+    </None>
+    <None Include="Lists\BusinessRulesMappings\BusinessRulesMappingsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40a8af14-6402-47b7-a72c-a702aaef045b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\BusinessRulesMappings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{afb13b98-3c6a-40c4-9a1e-ebe4f570e493}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Expense\ExpenseInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{152ecc26-d67f-4d4f-a6ba-bb9af46bae63}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Expense\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cea67c3d-51c5-440e-8e5f-a21ca4c811b7}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ExpenseDetails\ExpenseDetailsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0a7cf1b1-4f4a-4e70-aa4a-9918428a4a85}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ExpenseDetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca551645-64b9-4350-9544-7554664d0e30}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ExpenseForms\ExpenseFormsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8555807a-df30-43b4-b87d-88ae762ce407}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ExpenseForms\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9cc97bc6-7799-4b38-a4a6-5a79bf5cf57a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\BusinessRuleTypes\BusinessRuleTypesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5b82331e-e0cd-424c-a739-bbe2a1309c3e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\BusinessRuleTypes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb9b198e-234f-482b-9e81-e9527c8035bd}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a8c12f53-b1e0-400c-8808-6a7f27dcaba1}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\fonts\bold\51116944-OpenSans-Bold.svg" />
+    <Content Include="Content\fonts\light\308593751-OpenSans-Light.svg" />
+    <Content Include="Content\fonts\regular\1403809-OpenSans-Regular.svg" />
+    <Content Include="Content\fonts\semibold\466186524-OpenSans-Semibold.svg" />
+    <Content Include="Features\Nagarro.NTEG.ExpenseOnline.WorkFlow\Nagarro.NTEG.ExpenseOnline.WorkFlow.Template.xml">
+      <DependentUpon>Nagarro.NTEG.ExpenseOnline.WorkFlow.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Nagarro.NTEG.ExpenseOnline.ListInstance\Nagarro.NTEG.ExpenseOnline.ListInstance.Template.xml">
+      <DependentUpon>Nagarro.NTEG.ExpenseOnline.ListInstance.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Nagarro.NTEG.ExpenseOnline.ListDefinition\Nagarro.NTEG.ExpenseOnline.ListDefinition.Template.xml">
+      <DependentUpon>Nagarro.NTEG.ExpenseOnline.ListDefinition.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Lists\BusinessRulesMappings\BusinessRulesMappingsInstance\Elements.xml" />
+    <Content Include="Lists\BusinessRulesMappings\Elements.xml" />
+    <Content Include="Lists\BusinessRulesMappings\Schema.xml" />
+    <Content Include="Lists\Expense\Elements.xml" />
+    <Content Include="Lists\Expense\ExpenseInstance\Elements.xml" />
+    <Content Include="Lists\Expense\Schema.xml" />
+    <Content Include="Lists\ExpenseDetails\Elements.xml" />
+    <Content Include="Lists\ExpenseDetails\ExpenseDetailsInstance\Elements.xml" />
+    <Content Include="Lists\ExpenseDetails\Schema.xml" />
+    <Content Include="Lists\ExpenseForms\Elements.xml" />
+    <Content Include="Lists\ExpenseForms\ExpenseFormsInstance\Elements.xml" />
+    <Content Include="Lists\ExpenseForms\Schema.xml" />
+    <Content Include="Lists\BusinessRuleTypes\Elements.xml" />
+    <Content Include="Lists\BusinessRuleTypes\BusinessRuleTypesInstance\Elements.xml" />
+    <Content Include="Lists\BusinessRuleTypes\Schema.xml" />
+    <Content Include="Pages\AddNewItem.aspx" />
+    <Content Include="Pages\EditItem.aspx" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6ecd2bf-7745-4845-8093-791b62bcb1dc}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\AddNewItem.js" />
+    <Content Include="Scripts\EditItem.js" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery.loader-0.3.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7da331b0-513d-4a15-ac21-fee5d8ba03cc}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0efdf0f5-988f-49c9-b04c-c5bde35a7aa7}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{31bed5f6-56f3-43e4-b275-f65dd4007fc7}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Nagarro.NTEG.ExpenseOnline.App\Nagarro.NTEG.ExpenseOnline.App.feature">
+      <FeatureId>{124e85a2-3493-4185-9d82-e609a4b6a957}</FeatureId>
+    </None>
+    <None Include="Features\Nagarro.NTEG.ExpenseOnline.App\Nagarro.NTEG.ExpenseOnline.App.Template.xml">
+      <DependentUpon>Nagarro.NTEG.ExpenseOnline.App.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

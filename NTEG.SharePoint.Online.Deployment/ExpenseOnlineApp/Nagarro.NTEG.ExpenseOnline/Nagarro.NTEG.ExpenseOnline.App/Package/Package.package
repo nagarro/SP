@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="31bed5f6-56f3-43e4-b275-f65dd4007fc7" solutionId="31bed5f6-56f3-43e4-b275-f65dd4007fc7" resetWebServer="false" sharePointProductVersion="15.0" name="Nagarro.NTEG.ExpenseOnline.App" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="124e85a2-3493-4185-9d82-e609a4b6a957" />
+    <featureReference itemId="c57b87d1-41d6-461c-ba2e-6ba087e2f5da" />
+    <featureReference itemId="a0e63871-99cb-4a63-8aea-9fbf8edb621c" />
+    <featureReference itemId="7df86121-d9ca-4163-ac34-a28e313c18e7" />
+  </features>
+</package>

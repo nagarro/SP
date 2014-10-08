@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance 
+    Title="Expense Forms" 
+    OnQuickLaunch="TRUE" 
+    TemplateType="10002" 
+    Url="Lists/ExpenseForms" 
+    Description="Expense Forms List Instance"
+    FeatureId="621ee048-12ce-4f41-b996-5cf9309b785f"
+    >    
+  </ListInstance>
+</Elements>

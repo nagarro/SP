@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\MoolBoran.ttf" Url="Content/fonts/MoolBoran.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\bold\51116944-OpenSans-Bold.eot" Url="Content/fonts/bold/51116944-OpenSans-Bold.eot" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\bold\51116944-OpenSans-Bold.svg" Url="Content/fonts/bold/51116944-OpenSans-Bold.svg" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\bold\51116944-OpenSans-Bold.ttf" Url="Content/fonts/bold/51116944-OpenSans-Bold.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\bold\51116944-OpenSans-Bold.woff" Url="Content/fonts/bold/51116944-OpenSans-Bold.woff" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\light\308593751-OpenSans-Light.eot" Url="Content/fonts/light/308593751-OpenSans-Light.eot" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\light\308593751-OpenSans-Light.svg" Url="Content/fonts/light/308593751-OpenSans-Light.svg" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\light\308593751-OpenSans-Light.ttf" Url="Content/fonts/light/308593751-OpenSans-Light.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\light\308593751-OpenSans-Light.woff" Url="Content/fonts/light/308593751-OpenSans-Light.woff" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\regular\1403809-OpenSans-Regular.eot" Url="Content/fonts/regular/1403809-OpenSans-Regular.eot" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\regular\1403809-OpenSans-Regular.svg" Url="Content/fonts/regular/1403809-OpenSans-Regular.svg" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\regular\1403809-OpenSans-Regular.ttf" Url="Content/fonts/regular/1403809-OpenSans-Regular.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\regular\1403809-OpenSans-Regular.woff" Url="Content/fonts/regular/1403809-OpenSans-Regular.woff" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\semibold\466186524-OpenSans-Semibold.eot" Url="Content/fonts/semibold/466186524-OpenSans-Semibold.eot" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\semibold\466186524-OpenSans-Semibold.svg" Url="Content/fonts/semibold/466186524-OpenSans-Semibold.svg" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\semibold\466186524-OpenSans-Semibold.ttf" Url="Content/fonts/semibold/466186524-OpenSans-Semibold.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\fonts\semibold\466186524-OpenSans-Semibold.woff" Url="Content/fonts/semibold/466186524-OpenSans-Semibold.woff" ReplaceContent="TRUE" />
+  </Module>
+</Elements>
